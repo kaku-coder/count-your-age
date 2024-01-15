@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://images.unsplash.com/photo-1704430002604-d6560f6d71b5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+}
+.contenor h1{
+        font-size: 7vh;
+        color: #fff;
+}
+.sething{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    /* overflow: hidden; */
+}
+.img{
+    position: absolute;
+    height: 30px;
+    color: #fff;
+    animation-name: icon;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    cursor: pointer;
+    
+}
+@keyframes icon{
+    0%{
+        rotate: 0deg;
+        right: 0px;
+        bottom: 30px;
+        
+    }
+
+    100%{
+        bottom: 30px;
+        right: 80px;
+    }
+
+}
+input{
+    padding: 1vh;
+    border-radius: 5%;
+    border: none;
+    outline: none;
+    font-size: 2vh;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    box-shadow: 1px 1px 1px lightblue;
+}
+.dobbutton{
+    padding: 0.5rem;
+    border-radius: 20px;
+    outline: none;
+    background-color: green;
+    color: #fff;
+}
+.hide{
+    display: none;
+}
+.time-contenor{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5vh;
+    color: #fff;
+    text-align: center;
+}
+.time-contenor h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.time-contenor div{
+    font-size: 2rem;
+}
